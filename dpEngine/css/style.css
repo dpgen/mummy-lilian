@@ -1,0 +1,56 @@
+/* Montserrat */
+/* ExtraBold */
+@font-face {
+  font-family: "Montserrat-ExtraBold";
+  src: url("../fonts/Montserrat/Montserrat-ExtraBold.ttf");
+}
+/* Regular */
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url("../fonts/Montserrat/Montserrat-Regular.ttf");
+}
+
+/* Autography */
+/* Regular */
+@font-face {
+  font-family: "Autography";
+  src: url("../fonts/autography/Autography.otf");
+}
+
+/* Ubuntu */
+/* Bold */
+@font-face {
+  font-family: "Ubuntu-Bold";
+  src: url("../fonts/Ubuntu/Ubuntu-Bold.ttf");
+}
+/* Regular */
+@font-face {
+  font-family: "Ubuntu-Regular";
+  src: url("../fonts/Ubuntu/Ubuntu-Regular.ttf");
+}
+
+/* al_nevrada */
+/* Regular */
+@font-face {
+  font-family: "AL_Nevrada_Personal_Use_Only";
+  src: url("../fonts/al_nevrada/AL_Nevrada_Personal_Use_Only.ttf");
+}
+
+/* AcidGrotesk */
+/* Bold */
+@font-face {
+  font-family: "AcidGrotesk-Bold";
+  src: url("../fonts/AcidGrotesk/AcidGrotesk-Bold.otf");
+}
+/* Regular */
+@font-face {
+  font-family: "AcidGrotesk-Normal";
+  src: url("../fonts/AcidGrotesk/AcidGrotesk-Normal.otf");
+}
+
+/* revisthond_cufonfonts */
+/* Regular */
+@font-face {
+  font-family: "Revisthond-Script";
+  src: url("../fonts/revisthond_cufonfonts/RevisthondScript-z8e2X.ttf");
+}

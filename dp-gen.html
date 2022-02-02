@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/dp.css">
+    <link rel="stylesheet" href="dpEngine/css/style.css">
+    <title>Happy Birthday Mummy Lilian!</title>
+</head>
+
+<body>
+    <header class="dp-heading">
+        <h1>Fill the air with <br>
+            your Testimonies</h1>
+        <img class="dp-heading-img" src="assets/images/mummy-testimony.png" alt="">
+        <img class="dp-cel" src="assets/images/celebrate.png" alt="">
+    </header>
+    <div class="dp-gen">
+        <img src="assets/images/lily.svg" alt="">
+        <img src="assets/images/lily-right.svg" alt="">
+        <div class="form">
+            <h3>Share an experience, testimony,
+                manner of life or message snippet
+                of how mummy has blessed you</h3>
+            <p>Tell us your name</p>
+            <input id="name" type="text" maxlength="25" placeholder="Max. limit is 25 characters">
+            <p>Share your experience here</p>
+            <textarea item id="experience" name="text-frame" class="text-frame" maxlength="555" placeholder="Max. limit is 555 characters" id="text-frame"
+                cols="30" rows="10"></textarea>
+            <button id="dp-gen-btn" disabled>Generate DP</button>
+            <p style="font-family: AcidGrotesk-Normal; visibility: hidden">
+                t
+            </p>
+            <p style="font-family: Revisthond-Script; visibility: hidden">
+                t
+            </p>
+        </div>
+        <div class="preview">
+        </div>
+        <div class="success">
+            <img src="assets/images/mummy-testimony.png" alt="">
+            <h3>Thank you for joining <br>
+                in our celebration!</h3>
+            <p>Your download should start soon,
+                don’t forget to share your DP everywhere
+                & also please take out time to pray
+                for Mummy Lilian Egwuchukwu.</p>
+        </div>
+
+    </div>
+    <p class="footer dp-gen-footer">Built by <a href="https://nlwc.church/">The New & Living Way Church</a> Publicity
+        Team
+    </p>
+    <script src="scripts/dp-gen.js"></script>
+    
+    <script src="dpEngine/js/jquery.min.js"></script>
+    <!-- <script src="dpEngine/js/jquery.cropit.js"></script> -->
+    <script src="dpEngine/js/main.js?v=1.0"></script>
+    <script>
+        function showSuccess() {
+            $('.success').show(); // shows
+            $(".preview").hide();
+        }
+      </script>
+</body>
