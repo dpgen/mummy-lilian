@@ -32,7 +32,7 @@ $(function () {
     const name = $(`#name`).val();
     const experience = $(`#experience`).val();
 
-    const numberOfLines = countLines(experience, 45);
+    const numberOfLines = countLines(experience, 50);
     let experienceData = [];
     switch (numberOfLines) {
       case 12:
@@ -79,9 +79,13 @@ $(function () {
         // name, y, x, message, x, y
         experienceData = [`${name}`, 1039, 1001, `${experience}`, 1001, 778];
         break;
-      default:
+      case 1:
         // name, y, x, message, x, y
         experienceData = [`${name}`, 919, 1001, `${experience}`, 1001, 778];
+        break;
+      default:
+        // name, y, x, message, x, y
+        experienceData = [`${name}`, 1475, 1001, `${experience}`, 1001, 264];
         break;
     }
     // x, y, width, height
@@ -200,7 +204,7 @@ $(function () {
       ctx.font = "63px AcidGrotesk-Normal";
       ctx.fillStyle = "#333333";
       // ctx.fillText(canvasText, name[2], name[1]);
-      wrapText(ctx, name[3], name[4], name[5], 45, 96, 0);
+      wrapText(ctx, name[3], name[4], name[5], 50, 96, 0);
 
       //Write user name
       ctx.font = "150px Revisthond-Script";
