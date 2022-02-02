@@ -7,7 +7,6 @@ $(function () {
   button.on("click", function () {
     button.attr("disabled", "disabled").html("processing...");
     processImage();
-    // window.scrollTo(0, 0);
   });
 
   function countLines(text, maxWidth) {
@@ -95,6 +94,7 @@ $(function () {
 
     function genericCb(url) {
       $(".form").hide(); // hides
+      window.scrollTo(0, 0);
       navigateTo("yourdp", createHTMLForImage(url));
 
       /*<a href="?" class="arrow-back"><i class="ti-arrow-left"></i> Back</a>*/
