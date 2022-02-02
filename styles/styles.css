@@ -353,6 +353,7 @@ input, button {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  height: intrinsic;
   margin-right: 68px;
   margin-top: 190px;
   -webkit-animation: bounce-1 2s ease-in infinite;
@@ -371,6 +372,7 @@ input, button {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  height: intrinsic;
   margin-top: 190px;
   min-width: 27%;
   -webkit-animation: bounce-1 2s ease-in infinite;
@@ -536,6 +538,7 @@ input, button {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  height: intrinsic;
   -webkit-animation: bounce-3 2s ease-in infinite;
   animation: bounce-3 2s ease-in infinite;
 }
