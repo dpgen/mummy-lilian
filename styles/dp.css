@@ -249,8 +249,8 @@
   margin: 0 auto;
   margin-top: 56px;
   border-radius: 20px;
-  font-size: 28px;
-  font-weight: 700;
+  font-size: 2px;
+  font-weight: 400;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -271,8 +271,8 @@
   margin: 0 auto;
   /* margin-top: 56px; */
   border-radius: 20px;
-  font-size: 28px;
-  font-weight: 700;
+  font-size: 24px;
+  font-weight: 400;
   justify-content: center;
   align-items: center;
   color: black;
