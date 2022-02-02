@@ -2,10 +2,12 @@ $(function () {
   /* global variables */
   const preview = $(".preview");
   const previewContent = preview.innerHTML;
+  const button = $("#dp-gen-btn");
 
-  $("#dp-gen-btn").on("click", function () {
+  button.on("click", function () {
+    button.attr("disabled", "disabled").html("processing...");
     processImage();
-    window.scrollTo(0, 0);
+    // window.scrollTo(0, 0);
   });
 
   function countLines(text, maxWidth) {
@@ -92,9 +94,9 @@ $(function () {
     createDP(experienceData, genericCb);
 
     function genericCb(url) {
+      $(".form").hide(); // hides
       navigateTo("yourdp", createHTMLForImage(url));
 
-      $(".form").hide(); // hides
       /*<a href="?" class="arrow-back"><i class="ti-arrow-left"></i> Back</a>*/
 
       function createHTMLForImage(url) {
