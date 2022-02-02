@@ -224,6 +224,8 @@ input {
   font-size: 50px;
   line-height: 60px;
   font-weight: 700;
+  opacity: 0;
+  transform: translateY(50px);
   text-transform: uppercase;
   z-index: 1;
 }

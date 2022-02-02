@@ -11,11 +11,11 @@ window.addEventListener("load", () => {
       ease: "power2",
       scale: 1.08,
     })
-    .from(headeingText, {
+    .to(headeingText, {
       delay: 2,
       duration: 1,
-      opacity: 0,
-      y: 50,
+      opacity: 1,
+      y: 0,
     });
   gsap.from(".mother", {
     scrollTrigger: document.querySelector(".mother"),
