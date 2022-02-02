@@ -11,11 +11,11 @@ window.addEventListener("load", () => {
       ease: "power2",
       scale: 1.08,
     })
-    .from(headeingText, {
+    .to(headeingText, {
       delay: 2,
       duration: 1,
-      opacity: 0,
-      y: 50,
+      opacity: 1,
+      y: 0,
     });
   gsap.from(".mother", {
     scrollTrigger: document.querySelector(".mother"),
@@ -49,13 +49,15 @@ window.addEventListener("load", () => {
   }, 2100);
   setTimeout(() => {
     spans.forEach((span, index) => {
-      gsap.from(span, {
+      gsap.to(span, {
         delay: (index + 1) * 0.15,
         duration: 0.3,
-        opacity: 0,
-        y: 50,
-        z: 50,
-        skewY: 9,
+        opacity: 1,
+        y: 0,
+        z: 0,
+        // skewType:"simple" ,
+        skewY: "0deg",
+        skewX: "0deg",
       });
     });
   }, 2000);

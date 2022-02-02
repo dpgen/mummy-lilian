@@ -210,9 +210,9 @@
   background: #ffffff;
   border: 1px solid #dadada;
   border-radius: 8px;
-  margin: 32px 0 128px;
+  margin: 20px 0 128px;
   padding: 20px;
-  font-size: 16px;
+  font-size: 18px;
   z-index: 9;
 }
 @media screen and (max-width: 1200px) {
@@ -236,6 +236,8 @@
   border-radius: 8px;
   padding: 0 20px;
   z-index: 9;
+  margin-top: 20px;
+  font-size: 18px;
 }
 .dp-gen button {
   background-color: #ffed8f;
@@ -279,6 +281,14 @@
   cursor: pointer;
   z-index: 9;
 }
+@media screen and (max-width: 600px) {
+  #download-dp {
+    width: 90%;
+    height: 50px;
+    font-size: 16px;
+    border-radius: 8px;
+  }
+}
 .dp-gen button:disabled {
   background-color: #fff8d0;
   color: #dedab4;
@@ -287,7 +297,6 @@
   .dp-gen input {
     width: 90%;
     height: 50px;
-    margin-top: 20px;
     font-size: 15px;
   }
   .dp-gen button {
@@ -333,6 +342,12 @@
   object-fit: cover;
 }
 @media screen and (max-width: 600px) {
+  .preview img {
+    height: 300px;
+    width: 300px;
+  }
+}
+@media screen and (max-width: 600px) {
   .form {
     width: 100%;
   }
@@ -363,6 +378,7 @@
   -o-object-fit: cover;
   object-fit: cover;
   border: 10px solid #FEE5E5;
+  display: none;
 }
 .success h3 {
   font-size: 72px;

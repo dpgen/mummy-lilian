@@ -5,10 +5,11 @@ $(function () {
 
   $("#dp-gen-btn").on("click", function () {
     processImage();
+    window.scrollTo(0, 0);
   });
 
   function countLines(text, maxWidth) {
-    var words = text.split(" ").filter(word => word!=="");
+    var words = text.split(" ").filter((word) => word !== "");
     var line = "";
     let count = 0;
     // console.log(words)
@@ -24,11 +25,10 @@ $(function () {
         line = testLine;
       }
     }
-    return (count + 1);
+    return count + 1;
   }
 
-
-  function processImage () {
+  function processImage() {
     const name = $(`#name`).val();
     const experience = $(`#experience`).val();
 
@@ -91,15 +91,15 @@ $(function () {
     // x, y, width, height
     createDP(experienceData, genericCb);
 
-    function genericCb (url) {
+    function genericCb(url) {
       navigateTo("yourdp", createHTMLForImage(url));
 
-      $('.form').hide(); // hides
+      $(".form").hide(); // hides
+      /*<a href="?" class="arrow-back"><i class="ti-arrow-left"></i> Back</a>*/
 
       function createHTMLForImage(url) {
         return `
         <section class="dp-container">
-          <a href="?" class="arrow-back"><i class="ti-arrow-left"></i> Back</a>
           <div class="img-dp">
             <img id="dp_result" src=${url} title="Your DP"/>
             <br>
@@ -110,8 +110,8 @@ $(function () {
         `;
       }
     }
-  };
-  
+  }
+
   if (CanvasRenderingContext2D && !CanvasRenderingContext2D.renderText) {
     // @param  letterSpacing  {float}  CSS letter-spacing property
     CanvasRenderingContext2D.prototype.renderText = function (
@@ -161,18 +161,17 @@ $(function () {
       ctx = canvas.getContext("2d"),
       imageCount = 1;
 
-    
     let frameNo = Math.floor(Math.random() * 3) + 1;
     let frameImg = null;
     switch (frameNo) {
       case 3:
-        frameImg =  loadImage("./dpEngine/img/Frame3.png");
+        frameImg = loadImage("./dpEngine/img/Frame3.png");
         break;
       case 2:
-        frameImg =  loadImage("./dpEngine/img/Frame2.png");
+        frameImg = loadImage("./dpEngine/img/Frame2.png");
         break;
       default:
-        frameImg =  loadImage("./dpEngine/img/Frame1.png");
+        frameImg = loadImage("./dpEngine/img/Frame1.png");
         break;
     }
 
@@ -198,7 +197,7 @@ $(function () {
       ctx.restore();
 
       ctx = canvas.getContext("2d");
-    
+
       //write messge
       ctx.textBaseline = "top";
       ctx.textAlign = "center";
@@ -212,13 +211,13 @@ $(function () {
       ctx.fillStyle = "#d2395e";
       var canvasText = `-${name[0]}`;
       ctx.fillText(canvasText, name[2], name[1]);
-      
+
       cb(canvas.toDataURL("image/jpeg", 1.0));
     }
   }
 
   function wrapText(context, text, x, y, maxWidth, lineHeight, letterSpacing) {
-    var words = text.split(" ").filter(word => word!=="");
+    var words = text.split(" ").filter((word) => word !== "");
     let line = "";
 
     for (let n = 0; n < words.length; n++) {
