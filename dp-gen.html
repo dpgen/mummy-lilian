@@ -27,7 +27,7 @@
                 of how mummy has blessed you</h3>
             <p>Tell us your name</p>
             <input id="name" type="text" maxlength="25" placeholder="Max. limit is 25 characters">
-            <p>Share your experience here</p>
+            <p>Share your experience here <span style="margin-left: 10px; opacity: 40%;">(<span id="counter">0</span>/555)</span></p>
             <textarea item id="experience" name="text-frame" class="text-frame" maxlength="555" placeholder="Max. limit is 555 characters" id="text-frame"
                 cols="30" rows="10"></textarea>
             <button id="dp-gen-btn" disabled>Generate DP</button>
@@ -60,6 +60,14 @@
     <!-- <script src="dpEngine/js/jquery.cropit.js"></script> -->
     <script src="dpEngine/js/main.js?v=1.0"></script>
     <script>
+        const textarea = document.getElementById("experience");
+  
+        textarea.addEventListener("input", (event) => {
+          const target = event.currentTarget;
+          const charLen = target.value.length;
+          const counter = document.getElementById("counter");
+          counter.innerText = charLen;
+        });
         function showSuccess() {
             $('.success').show(); // shows
             $(".preview").hide();
