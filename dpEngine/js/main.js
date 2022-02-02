@@ -211,7 +211,7 @@ $(function () {
       //Write user name
       ctx.font = "150px Revisthond-Script";
       ctx.fillStyle = "#d2395e";
-      var canvasText = `-${name[0]}`;
+      var canvasText = `- ${name[0]}`;
       ctx.fillText(canvasText, name[2], name[1]);
 
       cb(canvas.toDataURL("image/jpeg", 1.0));
