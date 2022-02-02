@@ -10,6 +10,5 @@ userName.addEventListener("input", (e) => {
 experience.addEventListener("input", (e) => {
   if (userName.value && experience.value) {
     button.disabled = false;
-    console.log();
   }
 });

@@ -172,7 +172,8 @@ input {
   z-index: 1;
 }
 .header h1 span {
-  /* opacity: 1; */
+  opacity: 0;
+  transform: translate3d(0, 50px, 50px);
   display: inline-block;
   -webkit-transition: all 0.2s;
   -o-transition: all 0.2s;
@@ -193,7 +194,7 @@ input {
     line-height: 275.59px;
   }
 }
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1370px) {
   .header h1 {
     font-size: 200px;
     line-height: 205.59px;
@@ -223,6 +224,8 @@ input {
   font-size: 50px;
   line-height: 60px;
   font-weight: 700;
+  opacity: 0;
+  transform: translateY(50px);
   text-transform: uppercase;
   z-index: 1;
 }
@@ -457,7 +460,7 @@ input {
   color: white;
   max-width: 710px;
   text-align: center;
-  margin: 0 auto 94px;
+  margin: 0 auto 144px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
